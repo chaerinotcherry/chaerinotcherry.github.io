@@ -1282,9 +1282,8 @@
       <div onclick="openGallery(0)"
         style="aspect-ratio:1; background:var(--surface); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:0.4rem; cursor:none; transition:background 0.2s;"
         onmouseover="this.style.background='var(--neon-dim)'" onmouseout="this.style.background='var(--surface)'">
-        <span style="font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:800; color:var(--text);">80+</span>
-        <span style="font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">View all</span>
-      </div>
+        <span style="font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:800; color:var(--text);">+</span>
+        <span style="font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">View all</span>      </div>
     </div>
   </div>
 </div>
@@ -1334,15 +1333,15 @@
     </ul>
     <div style="margin-top:1.5rem; display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border);">
       <div style="aspect-ratio:1; overflow:hidden; background:var(--surface);">
-        <img src="YOUR_LEGO_PHOTO_1.jpg" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;"
+        <img src="files/lego/11.jpg" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;"
           onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <div style="aspect-ratio:1; overflow:hidden; background:var(--surface);">
-        <img src="YOUR_LEGO_PHOTO_2.jpg" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;"
+        <img src="files/lego/19.jpg" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;"
           onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <div style="aspect-ratio:1; overflow:hidden; background:var(--surface);">
-        <img src="YOUR_LEGO_PHOTO_3.jpg" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;"
+        <img src="files/lego/05.jpg" style="width:100%; height:100%; object-fit:cover; transition:transform 0.3s;"
           onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
       </div>
       <div onclick="openGallery(2)"
@@ -1442,14 +1441,31 @@
     { src: 'files/perfume/26.webp' },
   ]
 },
-    {
-      title: 'Lego Starlab — Lecturer',
-      photos: [
-        { src: 'YOUR_LEGO_PHOTO_1.jpg', caption: 'Robotics class' },
-        { src: 'YOUR_LEGO_PHOTO_2.jpg', caption: 'Student session' },
-        { src: 'YOUR_LEGO_PHOTO_3.jpg', caption: 'Workshop' },
-      ]
-    },
+   {
+  title: 'Lego Starlab — Lecturer',
+  photos: [
+    { src: 'files/lego/01.jpg' },
+    { src: 'files/lego/02.jpg' },
+    { src: 'files/lego/03.jpg' },
+    { src: 'files/lego/04.jpg' },
+    { src: 'files/lego/05.jpg' },
+    { src: 'files/lego/06.jpg' },
+    { src: 'files/lego/07.jpg' },
+    { src: 'files/lego/08.jpg' },
+    { src: 'files/lego/09.jpg' },
+    { src: 'files/lego/10.jpg' },
+    { src: 'files/lego/11.jpg' },
+    { src: 'files/lego/12.jpg' },
+    { src: 'files/lego/13.jpg' },
+    { src: 'files/lego/14.jpg' },
+    { src: 'files/lego/15.jpg' },
+    { src: 'files/lego/16.jpg' },
+    { src: 'files/lego/17.jpg' },
+    { src: 'files/lego/18.jpg' },
+    { src: 'files/lego/19.jpg' },
+    { src: 'files/lego/20.jpg' },
+  ]
+},
   ];
 
   let currentPhoto = 0;
