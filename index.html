@@ -819,10 +819,10 @@
       <span class="sec-num">01</span>
       <h2 class="sec-title">Experience</h2>
     </div>
-    <div class="exp-list">
+<div class="exp-list">
 
   <!-- Tencent -->
-  <div class="exp-item">
+  <div class="exp-item" style="position:relative; padding-bottom:5rem;">
     <div>
       <div class="exp-company">Tencent</div>
       <div class="exp-date">Feb 2026 – Present</div>
@@ -851,10 +851,17 @@
       <span class="tag">Multi-Agent</span>
       <span class="tag">RAG</span>
     </div>
+    <button onclick="openModal('tencent')"
+      style="position:absolute; bottom:2.5rem; right:0; display:inline-flex; align-items:center; gap:0.7rem; padding:0.85rem 1.6rem; background:var(--neon); color:#000; border:none; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:'DM Mono',monospace; font-weight:500; cursor:none; transition:all 0.2s;"
+      onmouseover="this.style.boxShadow='0 0 24px rgba(184,244,0,0.4)'; this.style.transform='translate(-2px,-2px)'"
+      onmouseout="this.style.boxShadow='none'; this.style.transform='translate(0,0)'">
+      View artifacts
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
   </div>
 
   <!-- AWS -->
-  <div class="exp-item">
+  <div class="exp-item" style="position:relative; padding-bottom:5rem;">
     <div>
       <div class="exp-company">Amazon Web Services</div>
       <div class="exp-date">Jun – Sep 2025</div>
@@ -883,10 +890,17 @@
       <span class="tag">IaC</span>
       <span class="tag">CI/CD</span>
     </div>
+    <button onclick="openModal('aws')"
+      style="position:absolute; bottom:2.5rem; right:0; display:inline-flex; align-items:center; gap:0.7rem; padding:0.85rem 1.6rem; background:var(--neon); color:#000; border:none; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:'DM Mono',monospace; font-weight:500; cursor:none; transition:all 0.2s;"
+      onmouseover="this.style.boxShadow='0 0 24px rgba(184,244,0,0.4)'; this.style.transform='translate(-2px,-2px)'"
+      onmouseout="this.style.boxShadow='none'; this.style.transform='translate(0,0)'">
+      View artifacts
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
   </div>
 
   <!-- Bannangco -->
-  <div class="exp-item">
+  <div class="exp-item" style="position:relative; padding-bottom:5rem;">
     <div>
       <div class="exp-company">Bannangco</div>
       <div class="exp-date">Oct 2024 – Feb 2025</div>
@@ -913,10 +927,17 @@
       <span class="tag">MySQL</span>
       <span class="tag">EC2</span>
     </div>
+    <button onclick="openModal('bannangco')"
+      style="position:absolute; bottom:2.5rem; right:0; display:inline-flex; align-items:center; gap:0.7rem; padding:0.85rem 1.6rem; background:var(--neon); color:#000; border:none; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:'DM Mono',monospace; font-weight:500; cursor:none; transition:all 0.2s;"
+      onmouseover="this.style.boxShadow='0 0 24px rgba(184,244,0,0.4)'; this.style.transform='translate(-2px,-2px)'"
+      onmouseout="this.style.boxShadow='none'; this.style.transform='translate(0,0)'">
+      View artifacts
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
   </div>
 
   <!-- Intelliz -->
-  <div class="exp-item">
+  <div class="exp-item" style="position:relative; padding-bottom:5rem;">
     <div>
       <div class="exp-company">Intelliz</div>
       <div class="exp-date">May 2023 – Jan 2024</div>
@@ -944,9 +965,17 @@
       <span class="tag">Docker</span>
       <span class="tag">MariaDB</span>
     </div>
+    <button onclick="openModal('intelliz')"
+      style="position:absolute; bottom:2.5rem; right:0; display:inline-flex; align-items:center; gap:0.7rem; padding:0.85rem 1.6rem; background:var(--neon); color:#000; border:none; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:'DM Mono',monospace; font-weight:500; cursor:none; transition:all 0.2s;"
+      onmouseover="this.style.boxShadow='0 0 24px rgba(184,244,0,0.4)'; this.style.transform='translate(-2px,-2px)'"
+      onmouseout="this.style.boxShadow='none'; this.style.transform='translate(0,0)'">
+      View artifacts
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
   </div>
 
 </div>
+  </div>
   </div>
 </section>
 
@@ -1267,6 +1296,80 @@
   }, { threshold: 0.08 });
 
   document.querySelectorAll('.stat-cell,.exp-item,.proj-card,.skill-col,.cert-bar,.edu-block,.leader-block,.lang-cell').forEach(el => io.observe(el));
+</script>
+<!-- MODAL -->
+<div id="modal-overlay"
+  onclick="closeModal()"
+  style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:1000; backdrop-filter:blur(6px); align-items:center; justify-content:center;">
+  <div onclick="event.stopPropagation()"
+    style="background:#fff; max-width:780px; width:90%; max-height:85vh; overflow-y:auto; padding:3rem; position:relative;">
+
+    <!-- 닫기 버튼 -->
+    <button onclick="closeModal()"
+      style="position:absolute; top:1.5rem; right:1.5rem; background:none; border:1px solid var(--border-dark); padding:0.4rem 0.8rem; font-size:0.65rem; letter-spacing:0.1em; text-transform:uppercase; font-family:'DM Mono',monospace; cursor:none; transition:all 0.2s;"
+      onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
+      onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='none'">
+      Close ✕
+    </button>
+
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script>
+  const artifacts = {
+    tencent: {
+      title: 'Tencent — Artifacts',
+      items: [
+        { type: 'image', src: 'YOUR_IMAGE_PATH.png', caption: 'Architecture diagram' },
+        { type: 'image', src: 'YOUR_IMAGE_PATH2.png', caption: 'System overview' },
+      ]
+    },
+    aws: {
+      title: 'AWS — Artifacts',
+      items: [
+        { type: 'image', src: 'YOUR_IMAGE_PATH.png', caption: 'SpeakShift architecture' },
+      ]
+    },
+    bannangco: {
+      title: 'Bannangco — Artifacts',
+      items: [
+        { type: 'image', src: 'YOUR_IMAGE_PATH.png', caption: 'DB schema' },
+      ]
+    },
+    intelliz: {
+      title: 'Intelliz — Artifacts',
+      items: [
+        { type: 'image', src: 'YOUR_IMAGE_PATH.png', caption: 'Data platform overview' },
+      ]
+    },
+  };
+
+  function openModal(id) {
+    const data = artifacts[id];
+    const content = document.getElementById('modal-content');
+    content.innerHTML = `
+      <div style="font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:700; margin-bottom:2rem; padding-bottom:1rem; border-bottom:1px solid var(--border);">${data.title}</div>
+      <div style="display:flex; flex-direction:column; gap:1.5rem;">
+        ${data.items.map(item => `
+          <div>
+            <img src="${item.src}" alt="${item.caption}"
+              style="width:100%; border:1px solid var(--border); display:block; margin-bottom:0.5rem;">
+            <div style="font-size:0.62rem; color:var(--muted); letter-spacing:0.1em; text-transform:uppercase;">${item.caption}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    const overlay = document.getElementById('modal-overlay');
+    overlay.style.display = 'flex';
+    setTimeout(() => overlay.style.opacity = '1', 10);
+  }
+
+  function closeModal() {
+    document.getElementById('modal-overlay').style.display = 'none';
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
