@@ -388,7 +388,7 @@
     text-transform: uppercase;
   }
   .exp-role {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: var(--muted2);
     font-style: italic;
     font-family: 'Fraunces', serif;
@@ -821,82 +821,132 @@
     </div>
     <div class="exp-list">
 
-      <div class="exp-item">
-        <div>
-          <div class="exp-company">Tencent</div>
-          <div class="exp-date">Feb 2026 – Present</div>
-          <div class="current-tag">Current</div>
-        </div>
-        <div>
-          <div class="exp-role">Solutions Architect Intern</div>
-          <ul class="exp-bullets">
-            <li>Building a <span class="hi">Multi-Agent RAG system</span> (LangChain Plan-and-Execute, ChromaDB) enabling natural language querying on EdgeOne CDN logs — orchestrator routes to 4 agents: query, incident, summary, and alert.</li>
-            <li>Translating client requirements into tailored cloud service recommendations; delivering presentations on EdgeOne CDN architecture to both technical and non-technical stakeholders.</li>
-          </ul>
-        </div>
-        <div class="exp-tags">
-          <span class="tag">LangChain</span>
-          <span class="tag">ChromaDB</span>
-          <span class="tag">Multi-Agent</span>
-          <span class="tag">RAG</span>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div>
-          <div class="exp-company">Amazon Web Services</div>
-          <div class="exp-date">Jun – Sep 2025</div>
-        </div>
-        <div>
-          <div class="exp-role">Solutions Architect Intern</div>
-          <ul class="exp-bullets">
-            <li>Built and shipped <span class="hi">SpeakShift</span> — a Zoom-integrated real-time transcription, translation, and voice-over solution for AWS Partner APJ, eliminating language barriers across the team.</li>
-            <li>Optimized AWS AI integrations (Transcribe, Translate, Polly) and decoupled a monolithic backend, slashing latency from <span class="hi">2–3s → 0.45s</span>; load-tested at 25 concurrent sessions with 99.5% success rate.</li>
-            <li>Provisioned AWS stack (ECS, ALB, CloudFront, S3, ECR) and automated deployments via CloudFormation IaC and GitLab CI/CD — provisioning under 10 min.</li>
-          </ul>
-        </div>
-        <div class="exp-tags">
-          <span class="tag">AWS</span><span class="tag">ECS</span>
-          <span class="tag">CloudFront</span><span class="tag">IaC</span><span class="tag">CI/CD</span>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div>
-          <div class="exp-company">Bannangco</div>
-          <div class="exp-date">Oct 2024 – Feb 2025</div>
-        </div>
-        <div>
-          <div class="exp-role">Software Engineer</div>
-          <ul class="exp-bullets">
-            <li>Designed and implemented a relational database schema (MySQL) supporting user auth, post management, and social interactions — integrated with Node.js backend and EC2 Auto Scaling.</li>
-            <li>Cut deployment time <span class="hi2">~67%</span> (30–60 min → &lt;10 min) via GitHub Actions and AWS CodeDeploy.</li>
-          </ul>
-        </div>
-        <div class="exp-tags">
-          <span class="tag">Node.js</span><span class="tag">MySQL</span><span class="tag">EC2</span>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div>
-          <div class="exp-company">Intelliz</div>
-          <div class="exp-date">May 2023 – Jan 2024</div>
-        </div>
-        <div>
-          <div class="exp-role">Backend Developer</div>
-          <ul class="exp-bullets">
-            <li>Engineered a real-time data platform ingesting remote device telemetry (MQTT → Django → MariaDB) with REST API endpoints — cut customer issue resolution from <span class="hi">3 hrs → &lt;5 min</span>.</li>
-            <li>Containerized development workflows with Docker, eliminating environment inconsistencies and cutting setup/deployment time by <span class="hi2">80%</span>.</li>
-          </ul>
-        </div>
-        <div class="exp-tags">
-          <span class="tag">Django</span><span class="tag">MQTT</span>
-          <span class="tag">Docker</span><span class="tag">MariaDB</span>
-        </div>
-      </div>
-
+  <!-- Tencent -->
+  <div class="exp-item">
+    <div>
+      <div class="exp-company">Tencent</div>
+      <div class="exp-date">Feb 2026 – Present</div>
+      <div class="current-tag">Current</div>
     </div>
+    <div>
+      <div class="exp-role">Solutions Architect Intern</div>
+      <div style="display:flex; flex-direction:column; gap:1.2rem;">
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Problem</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Enterprise clients couldn't query or monitor CDN logs without engineering support — every insight required manual intervention.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Approach</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Designed a <span class="hi">multi-agent RAG system</span> with a Plan-and-Execute orchestrator routing to 4 specialized agents (query, incident, summary, alert) backed by <span class="hi">ChromaDB</span> vector storage.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Result</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Natural language querying over CDN logs, enabling non-technical stakeholders to surface incidents and insights <span class="hi">independently</span>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-tags">
+      <span class="tag">LangChain</span>
+      <span class="tag">ChromaDB</span>
+      <span class="tag">Multi-Agent</span>
+      <span class="tag">RAG</span>
+    </div>
+  </div>
+
+  <!-- AWS -->
+  <div class="exp-item">
+    <div>
+      <div class="exp-company">Amazon Web Services</div>
+      <div class="exp-date">Jun – Sep 2025</div>
+    </div>
+    <div>
+      <div class="exp-role">Solutions Architect Intern</div>
+      <div style="display:flex; flex-direction:column; gap:1.2rem;">
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Problem</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">AWS Partner APJ's multilingual team was losing productivity in Zoom calls — real-time communication across languages had no scalable solution.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Approach</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Built <span class="hi">SpeakShift</span>, integrating AWS Transcribe, Translate, and Polly into a decoupled backend on <span class="hi">ECS behind ALB</span>, with CloudFormation IaC and GitLab CI/CD automating the full deployment pipeline.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Result</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Latency slashed from <span class="hi">2–3s → 0.45s</span>, <span class="hi">99.5% success rate</span> at 25 concurrent sessions, provisioning time under 10 minutes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-tags">
+      <span class="tag">AWS</span>
+      <span class="tag">ECS</span>
+      <span class="tag">CloudFront</span>
+      <span class="tag">IaC</span>
+      <span class="tag">CI/CD</span>
+    </div>
+  </div>
+
+  <!-- Bannangco -->
+  <div class="exp-item">
+    <div>
+      <div class="exp-company">Bannangco</div>
+      <div class="exp-date">Oct 2024 – Feb 2025</div>
+    </div>
+    <div>
+      <div class="exp-role">Software Engineer</div>
+      <div style="display:flex; flex-direction:column; gap:1.2rem;">
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Problem</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Deployment was a bottleneck — manual releases took 30–60 minutes, slowing down the entire dev cycle.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Approach</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Redesigned the deployment pipeline using <span class="hi">GitHub Actions</span> and <span class="hi">AWS CodeDeploy</span>, alongside a robust MySQL schema supporting auth, social interactions, and EC2 Auto Scaling.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Result</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Deployment time cut by <span class="hi">~67%</span>, dropping to under 10 minutes consistently.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-tags">
+      <span class="tag">Node.js</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">EC2</span>
+    </div>
+  </div>
+
+  <!-- Intelliz -->
+  <div class="exp-item">
+    <div>
+      <div class="exp-company">Intelliz</div>
+      <div class="exp-date">May 2023 – Jan 2024</div>
+    </div>
+    <div>
+      <div class="exp-role">Backend Developer</div>
+      <div style="display:flex; flex-direction:column; gap:1.2rem;">
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Problem</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Customer issues with remote devices took up to 3 hours to diagnose — no real-time visibility into device telemetry.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Approach</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Engineered a real-time ingestion platform (<span class="hi">MQTT → Django → MariaDB</span>) with REST API endpoints, and containerized the entire workflow with <span class="hi">Docker</span> to eliminate environment inconsistencies.</p>
+        </div>
+        <div>
+          <div style="font-size:0.9rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--neon); margin-bottom:0.4rem; text-shadow:0 0 8px var(--neon-glow);">Result</div>
+          <p style="font-size:0.9rem; color:var(--muted2); line-height:1.65;">Issue resolution time dropped from <span class="hi">3 hrs → &lt;5 min</span>. Team setup and deployment time reduced by <span class="hi">80%</span>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="exp-tags">
+      <span class="tag">Django</span>
+      <span class="tag">MQTT</span>
+      <span class="tag">Docker</span>
+      <span class="tag">MariaDB</span>
+    </div>
+  </div>
+
+</div>
   </div>
 </section>
 
@@ -908,29 +958,102 @@
       <h2 class="sec-title">Projects</h2>
     </div>
     <div class="projects-grid">
-      <div class="proj-card">
-        <div class="proj-num">01</div>
-        <div class="award-pill">🏆 2025 ICT Awards Korea — Grand Prize</div>
-        <div class="proj-title">VisualVroom</div>
-        <div class="proj-lang">Java · Android / Wear OS</div>
-        <p class="proj-desc">End-to-end audio processing pipeline for vehicle sound classification with directional detection at 94% accuracy. Raw audio → spectrogram/MFCC extraction → image generation → ViT inference. Accessibility app for deaf drivers delivering real-time haptic feedback and visual alerts via continuous background audio monitoring.</p>
-        <div class="proj-tags">
-          <span class="tag">Audio ML</span><span class="tag">ViT</span><span class="tag">MFCC</span>
-          <span class="tag">Android</span><span class="tag">Wear OS</span><span class="tag">Accessibility</span>
-        </div>
+
+  <!-- VisualVroom -->
+  <div class="proj-card">
+    <div class="proj-num">01</div>
+    <div class="award-pill">🏆 2025 ICT Awards Korea — Grand Prize</div>
+    <div class="proj-title">VisualVroom</div>
+    <div class="proj-lang">Java · Android / Wear OS</div>
+    <p class="proj-desc">End-to-end audio processing pipeline for vehicle sound classification with directional detection at 94% accuracy. Raw audio → spectrogram/MFCC extraction → image generation → ViT inference. Accessibility app for deaf drivers delivering real-time haptic feedback and visual alerts via continuous background audio monitoring.</p>
+
+    <!-- 영상 -->
+    <div style="position:relative; width:100%; aspect-ratio:16/9; margin-bottom:1.5rem; background:#000; overflow:hidden;">
+      <iframe
+        src="https://www.youtube.com/embed/YOUTUBE_ID_1"
+        title="VisualVroom Demo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position:absolute; inset:0; width:100%; height:100%;">
+      </iframe>
+    </div>
+
+    <!-- 태그 + 링크 아이콘 -->
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; flex-wrap:wrap;">
+      <div class="proj-tags">
+        <span class="tag">Audio ML</span><span class="tag">ViT</span><span class="tag">MFCC</span>
+        <span class="tag">Android</span><span class="tag">Wear OS</span><span class="tag">Accessibility</span>
       </div>
-      <div class="proj-card">
-        <div class="proj-num">02</div>
-        <div class="award-pill">🥇 2024 Metaverse Developer Contest — Meta Representative</div>
-        <div class="proj-title">Magic &amp; Merge</div>
-        <div class="proj-lang">Python · C# · Oculus VR</div>
-        <p class="proj-desc">End-to-end gesture recognition pipeline extracting hand landmark data via Mediapipe and Oculus XR Hands, preprocessing keypoint sequences, and training an LSTM model at 90% accuracy. Integrated into a live Oculus VR game interface in collaboration with a game development team.</p>
-        <div class="proj-tags">
-          <span class="tag">LSTM</span><span class="tag">Mediapipe</span>
-          <span class="tag">VR</span><span class="tag">XR Hands</span><span class="tag">Gesture ML</span>
-        </div>
+      <div style="display:flex; gap:0.6rem; flex-shrink:0;">
+        <!-- GitHub -->
+        <a href="https://github.com/chaerinotcherry/REPO_NAME" target="_blank"
+           title="GitHub"
+           style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
+           onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
+           onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='transparent'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <!-- 수상 기사 -->
+        <a href="https://ARTICLE_URL_1" target="_blank"
+           title="Award Article"
+           style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
+           onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
+           onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='transparent'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
+        </a>
       </div>
     </div>
+  </div>
+
+  <!-- Magic & Merge -->
+  <div class="proj-card">
+    <div class="proj-num">02</div>
+    <div class="award-pill">🥇 2024 Metaverse Developer Contest — Meta Representative</div>
+    <div class="proj-title">Magic &amp; Merge</div>
+    <div class="proj-lang">Python · C# · Oculus VR</div>
+    <p class="proj-desc">End-to-end gesture recognition pipeline extracting hand landmark data via Mediapipe and Oculus XR Hands, preprocessing keypoint sequences, and training an LSTM model at 90% accuracy. Integrated into a live Oculus VR game interface in collaboration with a game development team.</p>
+
+    <!-- 영상 -->
+    <div style="position:relative; width:100%; aspect-ratio:16/9; margin-bottom:1.5rem; background:#000; overflow:hidden;">
+      <iframe
+        src="https://www.youtube.com/embed/YOUTUBE_ID_2"
+        title="Magic and Merge Demo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="position:absolute; inset:0; width:100%; height:100%;">
+      </iframe>
+    </div>
+
+    <!-- 태그 + 링크 아이콘 -->
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; flex-wrap:wrap;">
+      <div class="proj-tags">
+        <span class="tag">LSTM</span><span class="tag">Mediapipe</span>
+        <span class="tag">VR</span><span class="tag">XR Hands</span><span class="tag">Gesture ML</span>
+      </div>
+      <div style="display:flex; gap:0.6rem; flex-shrink:0;">
+        <!-- GitHub -->
+        <a href="https://github.com/chaerinotcherry/REPO_NAME_2" target="_blank"
+           title="GitHub"
+           style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
+           onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
+           onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='transparent'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <!-- 수상 기사 -->
+        <a href="https://ARTICLE_URL_2" target="_blank"
+           title="Award Article"
+           style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
+           onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
+           onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='transparent'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
   </div>
 </section>
 
@@ -984,6 +1107,13 @@
       <div>
         <div class="cert-name">AWS Solutions Architect – Associate</div>
         <div class="cert-sub">Certification · Amazon Web Services</div>
+      </div>
+    </div>
+    <div class="cert-bar">
+      <span style="font-size:1.5rem">🏅</span>
+      <div>
+        <div class="cert-name">Certified Kubernetes Administrator</div>
+        <div class="cert-sub">Certification · The Linux Foundation</div>
       </div>
     </div>
   </div>
