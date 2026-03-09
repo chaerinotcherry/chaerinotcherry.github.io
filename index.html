@@ -474,7 +474,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 0.57rem;
+    font-size: 0.8rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 0.3rem 0.7rem;
@@ -494,7 +494,7 @@
     transition: color 0.25s;
   }
   .proj-card:hover .proj-title { color: var(--text); }
-  .proj-lang { font-size: 0.6rem; color: var(--neon); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.2rem; text-shadow: 0 0 10px var(--neon-glow); }
+  .proj-lang { font-size: 0.9rem; background-color: var(--neon); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.2rem; text-shadow: 0 0 10px var(--neon-glow); }
   .proj-desc { font-size: 0.71rem; color: var(--muted2); line-height: 1.75; margin-bottom: 1.5rem; }
   .proj-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 
@@ -856,13 +856,13 @@
       <span class="tag">Multi-Agent</span>
       <span class="tag">RAG</span>
     </div>
-    <button onclick="openModal('tencent')"
+    <!-- <button onclick="openModal('tencent')"
       style="position:absolute; bottom:2.5rem; right:0; display:inline-flex; align-items:center; gap:0.7rem; padding:0.85rem 1.6rem; background:var(--neon); color:#000; border:none; font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; font-family:'DM Mono',monospace; font-weight:500; cursor:none; transition:all 0.2s;"
       onmouseover="this.style.boxShadow='0 0 24px rgba(184,244,0,0.4)'; this.style.transform='translate(-2px,-2px)'"
       onmouseout="this.style.boxShadow='none'; this.style.transform='translate(0,0)'">
       View artifacts
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </button>
+    </button> -->
   </div>
 
   <!-- AWS -->
@@ -1010,7 +1010,7 @@
     <!-- 영상 -->
     <div style="position:relative; width:100%; aspect-ratio:16/9; margin-bottom:1.5rem; background:#000; overflow:hidden;">
       <iframe
-        src="https://www.youtube.com/embed/YOUTUBE_ID_1"
+        src="https://www.youtube.com/embed/watch?v=BQmdU7jwddo"
         title="VisualVroom Demo"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1023,26 +1023,26 @@
     <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:1rem; flex-wrap:wrap;">
       <div class="proj-tags">
         <span class="tag">Audio ML</span><span class="tag">ViT</span><span class="tag">MFCC</span>
-        <span class="tag">Android Studio</span><span class="tag">Android/Wear OS</span><span class="tag">Accessibility</span>
+        <span class="tag">Android Studio</span>
       </div>
       <div style="display:flex; gap:0.6rem; flex-shrink:0;">
         <!-- GitHub -->
-        <a href="https://github.com/chaerinotcherry/REPO_NAME" target="_blank"
+        <a href="https://github.com/GDG-SKKU/VisualVroom_Android_GDG" target="_blank"
            title="GitHub"
            style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
            onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
            onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='transparent'">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
-        <!-- 수상 기사 -->
-        <a href="https://ARTICLE_URL_1" target="_blank"
-           title="Award Article"
+        <a href="files/visualvroom.pdf" target="_blank"
+           title="Document"
            style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
            onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
            onmouseout="this.style.borderColor='var(--border-dark)'; this.style.background='transparent'">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>
         </a>
       </div>
+      
     </div>
   </div>
 
@@ -1057,7 +1057,7 @@
     <!-- 영상 -->
     <div style="position:relative; width:100%; aspect-ratio:16/9; margin-bottom:1.5rem; background:#000; overflow:hidden;">
       <iframe
-        src="https://www.youtube.com/embed/YOUTUBE_ID_2"
+        src="https://www.youtube.com/embed/watch?v=TvzQMJda-io"
         title="Magic and Merge Demo"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1074,7 +1074,7 @@
       </div>
       <div style="display:flex; gap:0.6rem; flex-shrink:0;">
         <!-- GitHub -->
-        <a href="https://github.com/chaerinotcherry/REPO_NAME_2" target="_blank"
+        <a href="https://github.com/chaerinotcherry/LSTM-Sign-Language-Recognition-Model" target="_blank"
            title="GitHub"
            style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
            onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
@@ -1082,7 +1082,7 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
         <!-- 수상 기사 -->
-        <a href="https://ARTICLE_URL_2" target="_blank"
+        <a href="https://www.modoogallery.online/studioon" target="_blank"
            title="Award Article"
            style="display:flex; align-items:center; justify-content:center; width:36px; height:36px; border:1px solid var(--border-dark); color:var(--text); text-decoration:none; transition:all 0.2s;"
            onmouseover="this.style.borderColor='var(--neon)'; this.style.background='var(--neon-dim)'"
@@ -1714,7 +1714,7 @@
     aws: {
       title: 'AWS — Artifacts',
       items: [
-        { type: 'pdf', src: 'assets/speakshift-architecture.pdf', caption: 'SpeakShift Architecture' },
+        { type: 'pdf', src: 'assets/speakshift-presentation.pdf', caption: 'SpeakShift Final Presentation' },
         { type: 'pdf', src: 'assets/speakshift-demo.pdf', caption: 'Demo Deck' },
       ]
     },
